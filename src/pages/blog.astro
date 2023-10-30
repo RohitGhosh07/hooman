@@ -1,0 +1,384 @@
+---
+import { getCollection } from "astro:content";
+import Main from "../components/Main.astro";
+import Layout from "../layouts/Layout.astro";
+import PostList from "../components/PostList.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+const posts = await getCollection("posts");
+---
+
+<!-- <Layout title="Blog | Hooman"> -->
+    <Header/>
+    <Main>
+        <section>
+            
+            <div class="px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-lg flex items-center space-x-2">
+                        <p>Hooman Digital</p><span
+                            class="w-2 h-2 bg-black inline-block"></span><p>
+                            Blog
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-20">
+            <div class="px-8">
+                <div class="max-w-6xl mx-auto">
+                    <h1 class="font-bold text-5xl max-w-xl leading-snug">
+                        WE DO AMAZING THINGS WITH AMAZING PEOPLE.
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <!-- {posts.map((post) => <PostList posts={posts} />)} -->
+        <section>
+            <div class="px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div
+                        class="grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-16"
+                    >
+                        <a
+                            href="/blog/blog1"
+                            class="space-y-6 cursor-pointer"
+                            target="_blank"
+                            ><div class="overflow-hidden">
+                                <img
+                                    src="blog1.webp"
+                                    alt="Navigating the Digital Age: Cybersecurity Essentials"
+                                    loading="lazy"
+                                    class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
+                                    width="1200"
+                                    height="1200"
+                                    decoding="async"
+                                />
+                            </div><div class="space-y-6 px-4">
+                                <div
+                                    class="space-x-2 flex items-center text-sm"
+                                >
+                                    <p class="font-bold">MARKETING</p><time
+                                        datetime="2022-07-28T00:00:00.000Z"
+                                        >Jul 28, 2022</time
+                                    >
+                                </div><div class="space-y-2">
+                                    <h3 class="text-2xl font-bold">
+                                        Navigating the Digital Age:
+                                        Cybersecurity Essentials
+                                    </h3><p class="line-clamp-2">
+                                        The Enchanted Forest is a place of
+                                        wonder and magic, shrouded in mystery
+                                        and teeming with fantastical creatures.
+                                        In this blog post
+                                    </p>
+                                </div><button
+                                    class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
+                                    ><span class="font-medium">Read more</span
+                                    ><svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        ><path
+                                            d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
+                                            fill="black"></path></svg
+                                    ></button
+                                >
+                            </div></a
+                        ><a
+                            href="/blog/blog2"
+                            class="space-y-6 cursor-pointer"
+                            target="_blank"
+                            ><div class="overflow-hidden">
+                                <img
+                                    src="blog2.webp"
+                                    alt="Mastering the Culinary Arts: A Chef's Guide to Flavor"
+                                    loading="lazy"
+                                    class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
+                                    width="1200"
+                                    height="1200"
+                                    decoding="async"
+                                />
+                            </div><div class="space-y-6 px-4">
+                                <div
+                                    class="space-x-2 flex items-center text-sm"
+                                >
+                                    <p class="font-bold">MARKETING</p><time
+                                        datetime="2022-07-22T00:00:00.000Z"
+                                        >Jul 22, 2022</time
+                                    >
+                                </div><div class="space-y-2">
+                                    <h3 class="text-2xl font-bold">
+                                        Mastering the Culinary Arts: A Chef's
+                                        Guide to Flavor
+                                    </h3><p class="line-clamp-2">
+                                        The Enchanted Forest is a place of
+                                        wonder and magic, shrouded in mystery
+                                        and teeming with fantastical creatures.
+                                        In this blog post
+                                    </p>
+                                </div><button
+                                    class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
+                                    ><span class="font-medium">Read more</span
+                                    ><svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        ><path
+                                            d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
+                                            fill="black"></path></svg
+                                    ></button
+                                >
+                            </div></a
+                        ><a
+                            href="/blog/blog3"
+                            class="space-y-6 cursor-pointer"
+                            target="_blank"
+                            ><div class="overflow-hidden">
+                                <img
+                                    src="blog3.webp"
+                                    alt="Eco-Friendly Living: Sustainable Practices for a Greener World"
+                                    loading="lazy"
+                                    class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
+                                    width="1200"
+                                    height="1200"
+                                    decoding="async"
+                                />
+                            </div><div class="space-y-6 px-4">
+                                <div
+                                    class="space-x-2 flex items-center text-sm"
+                                >
+                                    <p class="font-bold">SOCIALMEDIA</p><time
+                                        datetime="2022-07-19T00:00:00.000Z"
+                                        >Jul 19, 2022</time
+                                    >
+                                </div><div class="space-y-2">
+                                    <h3 class="text-2xl font-bold">
+                                        Eco-Friendly Living: Sustainable
+                                        Practices for a Greener World
+                                    </h3><p class="line-clamp-2">
+                                        The Enchanted Forest is a place of
+                                        wonder and magic, shrouded in mystery
+                                        and teeming with fantastical creatures.
+                                        In this blog post
+                                    </p>
+                                </div><button
+                                    class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
+                                    ><span class="font-medium">Read more</span
+                                    ><svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        ><path
+                                            d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
+                                            fill="black"></path></svg
+                                    ></button
+                                >
+                            </div></a
+                        ><a
+                            href="/blog/exploring-the-mysteries-of-the-enchanted-forest"
+                            class="space-y-6 cursor-pointer"
+                            ><div class="overflow-hidden">
+                                <img
+                                    src="blog4.webp"
+                                    alt="Exploring the Mysteries of the Enchanted Forest"
+                                    loading="lazy"
+                                    class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
+                                    width="1200"
+                                    height="1200"
+                                    decoding="async"
+                                />
+                            </div><div class="space-y-6 px-4">
+                                <div
+                                    class="space-x-2 flex items-center text-sm"
+                                >
+                                    <p class="font-bold">MARKETING</p><time
+                                        datetime="2022-07-15T00:00:00.000Z"
+                                        >Jul 15, 2022</time
+                                    >
+                                </div><div class="space-y-2">
+                                    <h3 class="text-2xl font-bold">
+                                        Exploring the Mysteries of the Enchanted
+                                        Forest
+                                    </h3><p class="line-clamp-2">
+                                        The Enchanted Forest is a place of
+                                        wonder and magic, shrouded in mystery
+                                        and teeming with fantastical creatures.
+                                        In this blog post
+                                    </p>
+                                </div><button
+                                    class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
+                                    ><span class="font-medium">Read more</span
+                                    ><svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        ><path
+                                            d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
+                                            fill="black"></path></svg
+                                    ></button
+                                >
+                            </div></a
+                        ><a
+                            href="/blog/the-science-of-sleep-unlocking-the-secrets-of-restorative-rest"
+                            class="space-y-6 cursor-pointer"
+                            ><div class="overflow-hidden">
+                                <img
+                                    src="blog5.webp"
+                                    alt="The Science of Sleep: Unlocking the Secrets of Restorative Rest"
+                                    loading="lazy"
+                                    class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
+                                    width="1200"
+                                    height="1200"
+                                    decoding="async"
+                                />
+                            </div><div class="space-y-6 px-4">
+                                <div
+                                    class="space-x-2 flex items-center text-sm"
+                                >
+                                    <p class="font-bold">DEVELOPMENT</p><time
+                                        datetime="2022-07-14T00:00:00.000Z"
+                                        >Jul 14, 2022</time
+                                    >
+                                </div><div class="space-y-2">
+                                    <h3 class="text-2xl font-bold">
+                                        The Science of Sleep: Unlocking the
+                                        Secrets of Restorative Rest
+                                    </h3><p class="line-clamp-2">
+                                        The Enchanted Forest is a place of
+                                        wonder and magic, shrouded in mystery
+                                        and teeming with fantastical creatures.
+                                        In this blog post
+                                    </p>
+                                </div><button
+                                    class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
+                                    ><span class="font-medium">Read more</span
+                                    ><svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        ><path
+                                            d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
+                                            fill="black"></path></svg
+                                    ></button
+                                >
+                            </div></a
+                        ><a
+                            href="/blog/the-art-of-mindful-gardening"
+                            class="space-y-6 cursor-pointer"
+                            ><div class="overflow-hidden">
+                                <img
+                                    src="blog6.webp"
+                                    alt="The Art of Mindful Gardening"
+                                    loading="lazy"
+                                    class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
+                                    width="1200"
+                                    height="1200"
+                                    decoding="async"
+                                />
+                            </div><div class="space-y-6 px-4">
+                                <div
+                                    class="space-x-2 flex items-center text-sm"
+                                >
+                                    <p class="font-bold">SOCIALMEDIA</p><time
+                                        datetime="2022-07-08T00:00:00.000Z"
+                                        >Jul 8, 2022</time
+                                    >
+                                </div><div class="space-y-2">
+                                    <h3 class="text-2xl font-bold">
+                                        The Art of Mindful Gardening
+                                    </h3><p class="line-clamp-2">
+                                        The Enchanted Forest is a place of
+                                        wonder and magic, shrouded in mystery
+                                        and teeming with fantastical creatures.
+                                        In this blog post
+                                    </p>
+                                </div><button
+                                    class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
+                                    ><span class="font-medium">Read more</span
+                                    ><svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        ><path
+                                            d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
+                                            fill="black"></path></svg
+                                    ></button
+                                >
+                            </div></a
+                        ><a
+                            href="/blog/the-ultimate-guide-to-unicorn-farming"
+                            class="space-y-6 cursor-pointer"
+                            ><div class="overflow-hidden">
+                                <img
+                                    src="blog7.webp"
+                                    alt="The Ultimate Guide to Unicorn Farming"
+                                    loading="lazy"
+                                    class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
+                                    width="1200"
+                                    height="1200"
+                                    decoding="async"
+                                />
+                            </div><div class="space-y-6 px-4">
+                                <div
+                                    class="space-x-2 flex items-center text-sm"
+                                >
+                                    <p class="font-bold">MARKETING</p><time
+                                        datetime="2022-07-02T00:00:00.000Z"
+                                        >Jul 2, 2022</time
+                                    >
+                                </div><div class="space-y-2">
+                                    <h3 class="text-2xl font-bold">
+                                        The Ultimate Guide to Unicorn Farming
+                                    </h3><p class="line-clamp-2">
+                                        The Enchanted Forest is a place of
+                                        wonder and magic, shrouded in mystery
+                                        and teeming with fantastical creatures.
+                                        In this blog post
+                                    </p>
+                                </div><button
+                                    class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
+                                    ><span class="font-medium">Read more</span
+                                    ><svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        ><path
+                                            d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
+                                            fill="black"></path></svg
+                                    ></button
+                                >
+                            </div></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-4"></div><p>Page: 1 / 1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <Footer/>
+    </Main>
+<!-- </Layout> -->
