@@ -10,7 +10,7 @@ const posts = await getCollection("posts");
 ---
 
 <!-- <Layout title="Blog | Hooman"> -->
-<header class="px-8 sticky top-0 z-50 bg-white">
+<header class="px-8 sticky top-0 z-50 bg-white border-b">
     <nav class="flex justify-between py-6 max-w-6xl mx-auto items-center">
         <a href="/"
             ><img
@@ -22,7 +22,7 @@ const posts = await getCollection("posts");
                 decoding="async"
             /></a
         ><div class="space-x-6">
-            <a href="/" class="font-normal font-semibold">Home</a><a
+            <a href="/" class="font-normal">Home</a><a
                 href="/blog"
                 class="font-normal">Blog</a
             ><a href="/docs/guides/first-guide" class="font-normal">Docs</a><a
@@ -32,6 +32,7 @@ const posts = await getCollection("posts");
         </div>
     </nav>
 </header>
+
 <Main>
     <section>
         <div class="px-8">
