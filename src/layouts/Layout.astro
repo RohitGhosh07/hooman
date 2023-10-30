@@ -1,7 +1,6 @@
 ---
-
-import Header from "../components/Header.astro"
-import { ViewTransitions } from 'astro:transitions';
+import Header from "../components/Header.astro";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
 	title?: string;
@@ -25,11 +24,34 @@ const {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:image" content={image} />
-		<ViewTransitions/>
+		<ViewTransitions />
 		<title>{title}</title>
-	</head>
+	</>
 	<body class="min-h-screen grid grid-rows-[auto,1fr,auto]">
-		<Header />
+		<header class="px-8 sticky top-0 z-50 bg-white">
+			<nav
+				class="flex justify-between py-6 max-w-6xl mx-auto items-center"
+			>
+				<a href="/"
+					><img
+						src="hooman logo.svg"
+						alt="rhythm nation logo"
+						width="142.42"
+						height="40"
+						loading="lazy"
+						decoding="async"
+					/></a
+				><div class="space-x-6">
+					<a href="/" class="font-normal font-semibold">Home</a><a
+						href="/blog"
+						class="font-normal">Blog</a
+					><a href="/docs/guides/first-guide" class="font-normal"
+						>Docs</a
+					><a href="/contact-us" class="font-normal">Contact</a>
+				</div>
+			</nav>
+		</header>
+
 		<slot />
 	</body>
 </html>
