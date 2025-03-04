@@ -9,15 +9,15 @@ interface Props {
 }
 
 const {
-	title = "Hooman",
-	description = "A community of music producers and enthusiasts",
-	image = "/images/band.jpg",
+	title = "Global Lawn Bowls",
+	description = "Innovating Lawn Bowls with cutting-edge technology through advanced scoring, tournament management, and data analytics solutions.",
+	image = "/lawn bowls.gif",
 } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<>
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
@@ -26,32 +26,15 @@ const {
 		<meta property="og:image" content={image} />
 		<ViewTransitions />
 		<title>{title}</title>
-	</>
+	</head>
 	<body class="min-h-screen grid grid-rows-[auto,1fr,auto]">
-		<header class="px-8 sticky top-0 z-50 bg-white">
-			<nav
-				class="flex justify-between py-6 max-w-6xl mx-auto items-center"
-			>
-				<a href="/"
-					><img
-						src="hooman logo.svg"
-						alt="rhythm nation logo"
-						width="142.42"
-						height="40"
-						loading="lazy"
-						decoding="async"
-					/></a
-				><div class="space-x-6">
-					<a href="/" class="font-normal font-semibold">Home</a><a
-						href="/blog"
-						class="font-normal">Blog</a
-					><a href="/docs/guides/first-guide" class="font-normal"
-						>Docs</a
-					><a href="/contact-us" class="font-normal">Contact</a>
-				</div>
-			</nav>
-		</header>
-
+		<Header />
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+</style>

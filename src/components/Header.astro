@@ -4,25 +4,14 @@ import { Image } from "astro:assets";
 const userEmail = Astro.cookies.get("userEmail");
 ---
 
-<header class="px-8 sticky top-0 z-50 bg-white">
+<header class="px-8 sticky top-0 z-50 bg-white border-b">
     <nav class="flex justify-between py-6 max-w-6xl mx-auto items-center">
-        <a href="/"
-            ><img
-                src="hooman logo.svg"
-                alt="rhythm nation logo"
-                width="142.42"
-                height="40"
-                loading="lazy"
-                decoding="async"
-            /></a
-        ><div class="space-x-6">
-            <a href="/" class="font-normal font-semibold">Home</a><a
-                href="/blog"
-                class="font-normal">Blog</a
-            ><a href="/docs/guides/first-guide" class="font-normal">Docs</a><a
-                href="/contact-us"
-                class="font-normal">Contact</a
-            >
+        <a href="/" class="font-jaldi text-gray-800 font-extrabold text-2xl">GLB</a>
+        <div class="space-x-8">
+            <a href="/" class="hover:text-yellow-400 transition-colors">Home</a>
+            <a href="#about" class="hover:text-yellow-400 transition-colors">About</a>
+            <a href="#solutions" class="hover:text-yellow-400 transition-colors">Solutions</a>
+            <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
         </div>
     </nav>
 </header>
