@@ -1,94 +1,166 @@
-<section class="bg-[#FFF8F2] py-20">
-    <div class="px-8">
+---
+import BlogModal from './BlogModal.astro';
+
+const blog1Content = `Lawn bowling is more than a leisurely pastime—it is a sport with a rich tapestry of history, traditions, and regional influences. With origins that trace back centuries, lawn bowling has evolved from a simple outdoor game into a celebrated sport worldwide.
+
+Origins and Early Beginnings
+The roots of lawn bowling can be traced to ancient civilizations where similar games involving rolling stones or balls on grass were played. However, modern lawn bowling as we know it began to take shape in medieval Europe. The game became particularly popular in Britain, where it was enjoyed by people from all walks of life. Royal patronage and community participation helped the sport flourish, setting the stage for the formalised rules and equipment that define it today.
+
+Traditions and Cultural Significance
+Lawn bowling has maintained a deep connection to tradition. Many clubs uphold rituals that have been passed down through generations—from the ceremonial raising of the club flag to the etiquette observed on the green. This adherence to tradition provides a sense of continuity and belonging, making every match not just a contest of skill, but a celebration of heritage.
+
+Global Spread and Regional Popularity
+While lawn bowling's heart lies in Britain, the sport has found a passionate following in various parts of the world. Countries in Europe, Australia, New Zealand, and parts of Asia have embraced the game, each adding unique cultural twists to its practice. In these regions, local leagues and international competitions have cemented lawn bowling as a bridge between generations and cultures. Its simple premise, requiring minimal equipment and space, has allowed it to adapt to diverse environments—from manicured urban greens to expansive rural fields.
+
+Why It Endures
+The enduring appeal of lawn bowling lies in its combination of physical precision and mental strategy. Players must not only master their delivery but also calculate angles, speed, and the condition of the green. This blend of physical skill and strategic planning ensures that the game remains engaging, no matter how much time has passed. Moreover, the sport's social aspect—bringing together communities and families—has played a significant role in its lasting popularity.
+
+Today, lawn bowling continues to evolve while remaining true to its historical roots. Clubs around the world cherish its traditions, while new generations of players bring innovation and renewed energy. Whether it's a leisurely match on a summer afternoon or a fiercely competitive tournament, lawn bowling's rich heritage and adaptability ensure it will remain a beloved sport for years to come.`;
+
+const blog2Content = `Lawn bowling in India is a fascinating blend of colonial heritage and contemporary sporting ambition. With deep historical roots and modern developments, the sport is steadily carving out its own niche on the Indian sporting landscape.
+
+Historical Background and Colonial Legacy
+The introduction of lawn bowling in India dates back to the British colonial era. During this period, the sport was primarily played by the elite, with clubs often being exclusive spaces of social interaction. One such club, the Royal Calcutta Golf Club (RCGC), became a pivotal institution in the establishment of lawn bowling in India. Known for its pristine greens and rich history, RCGC served as a cultural hub where lawn bowling was enjoyed by enthusiasts, bridging colonial traditions with local interest.
+
+The Royal Calcutta Golf Club's Role
+RCGC stands out not only as one of India's oldest sporting clubs but also as a beacon of lawn bowling. The club's well-maintained grounds and commitment to sporting excellence attracted many early adopters of the game. Over time, RCGC has expanded its focus by nurturing local talent and hosting various competitions that have elevated the profile of lawn bowling in the region. Today, RCGC remains a symbol of the sport's historical prestige and its continued relevance in India.
+
+Modern Competitions, Clubs, and Regional Growth
+In recent years, lawn bowling has experienced a resurgence across India. Notably, the recently concluded National Games in Uttarakhand featured competitive lawn bowling events, highlighting the sport's expanding reach and appeal. Additionally, regions such as Jharkhand, Bihar, and Assam have emerged as vibrant centers for lawn bowling, hosting local tournaments that engage both seasoned players and enthusiastic newcomers.
+
+Across the country, clubs dedicated to lawn bowling are flourishing—from metropolitan centers like Delhi and Mumbai to regional hubs in the East and North-East. These clubs not only offer a platform for competition but also play a crucial role in grassroots development by organizing community events, training sessions, and inter-club leagues. Together, these initiatives reflect a dynamic shift from lawn bowling's colonial past to a modern competitive landscape, demonstrating its growing popularity and the increasing infrastructural support within India.
+
+Looking Forward
+The journey of lawn bowling in India is a testament to the sport's resilience and adaptability. While its origins are steeped in colonial history and tradition, the modern landscape is characterized by innovation and inclusivity. With the integration of contemporary competitions and the steady growth of local clubs, India is poised to make a significant mark on the international lawn bowling stage. The sport's continued evolution—from prestigious venues like the Royal Calcutta Golf Club to emerging regional centers—ensures that lawn bowling will remain both a cherished heritage and a forward-looking sport.
+
+In summary, lawn bowling in India is an exciting fusion of historical legacy and modern sporting culture—a sport that honors its past while eagerly embracing the future.`;
+---
+
+<section class="bg-gradient-to-b from-[#FFF8F2] to-white py-16 md:py-20">
+    <div class="px-4 sm:px-8">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-5xl font-bold leading-snug">RECENT BLOG</h2><div
-                class="grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-16 mt-10"
-            >
-                <a
-                    href="/blog/blog1"
-                    class="space-y-6 cursor-pointer"
-                    target="_blank"
-                    ><div class="overflow-hidden">
-                        <img
-                            src="blog1.webp"
-                            alt="Navigating the Digital Age: Cybersecurity Essentials"
-                            loading="lazy"
-                            class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
-                            width="1200"
-                            height="1200"
-                            decoding="async"
-                        />
-                    </div><div class="space-y-6 px-4">
-                        <div class="space-x-2 flex items-center text-sm">
-                            <p class="font-bold">MARKETING</p><time
-                                datetime="2022-07-28T00:00:00.000Z"
-                                >Jul 28, 2022</time
-                            >
-                        </div><div class="space-y-2">
-                            <h3 class="text-2xl font-bold">
-                                Navigating the Digital Age: Cybersecurity
-                                Essentials
-                            </h3><p class="line-clamp-2">
-                                The Enchanted Forest is a place of wonder and
-                                magic, shrouded in mystery and teeming with
-                                fantastical creatures. In this blog post
-                            </p>
-                        </div><button
-                            class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
-                            ><span class="font-medium">Read more</span><svg
-                                width="10"
-                                height="10"
-                                viewBox="0 0 10 10"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                ><path
-                                    d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
-                                    fill="black"></path></svg
-                            ></button
-                        >
-                    </div></a
-                ><a href="/blog/blog2" target="_blank" class="space-y-6 cursor-pointer"
-                    ><div class="overflow-hidden">
-                        <img
-                            src="blog2.webp"
-                            alt="Mastering the Culinary Arts: A Chef's Guide to Flavor"
-                            loading="lazy"
-                            class="object-cover overflow-hidden bg-gray-600 h-[440px] w-full rounded-lg"
-                            width="1200"
-                            height="1200"
-                            decoding="async"
-                        />
-                    </div><div class="space-y-6 px-4">
-                        <div class="space-x-2 flex items-center text-sm">
-                            <p class="font-bold">MARKETING</p><time
-                                datetime="2022-07-22T00:00:00.000Z"
-                                >Jul 22, 2022</time
-                            >
-                        </div><div class="space-y-2">
-                            <h3 class="text-2xl font-bold">
-                                Mastering the Culinary Arts: A Chef's Guide to
-                                Flavor
-                            </h3><p class="line-clamp-2">
-                                The Enchanted Forest is a place of wonder and
-                                magic, shrouded in mystery and teeming with
-                                fantastical creatures. In this blog post
-                            </p>
-                        </div><button
-                            class="px-4 py-1.5 border border-slate-900 rounded-full flex items-center space-x-4"
-                            ><span class="font-medium">Read more</span><svg
-                                width="10"
-                                height="10"
-                                viewBox="0 0 10 10"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                ><path
-                                    d="M1.07692 10L8.46154 2.61538V9.23077H10V0H0.769231V1.53846H7.38462L0 8.92308L1.07692 10Z"
-                                    fill="black"></path></svg
-                            ></button
-                        >
-                    </div></a
+            <!-- Section header with gradient underline -->
+            <div class="flex flex-col items-start mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">RECENT BLOG</h2>
+                <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-24 mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-10">
+                <!-- Blog Card 1 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-1"
+                    onclick="window.openBlogModal('blog-modal-1')"
                 >
+                    <div class="relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <img
+                            src="01blog.jpg"
+                            alt="Lawn Bowling – A Journey Through History, Tradition, and Geography"
+                            loading="lazy"
+                            class="object-cover h-[300px] md:h-[320px] w-full transform group-hover:scale-105 transition-transform duration-700"
+                            width="1200"
+                            height="800"
+                            decoding="async"
+                        />
+                        <div class="absolute top-4 left-4 bg-indigo-600 text-white text-xs uppercase font-bold px-3 py-1.5 rounded-full z-20">SPORTS</div>
+                    </div>
+                    
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center space-x-2 text-sm text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <time datetime="2022-07-28T00:00:00.000Z">Jul 28, 2022</time>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-200 line-clamp-2">
+                                Lawn Bowling – A Journey Through History, Tradition, and Geography
+                            </h3>
+                            <p class="text-gray-600 line-clamp-2 leading-relaxed">
+                                Lawn bowling is more than a leisurely pastime—it is a sport with a rich tapestry of 
+                                history, traditions, and regional influences. With origins that trace back centuries,
+                                lawn bowling has evolved from a simple outdoor game into a celebrated sport worldwide.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <button
+                                class="inline-flex items-center text-indigo-600 font-medium group-hover:text-indigo-800 transition-colors"
+                            >
+                                <span>Read more</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">
+                                    <path d="M13.5 7.5L17.5 11.5M17.5 11.5L13.5 15.5M17.5 11.5L2.5 11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 2 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-1"
+                    onclick="window.openBlogModal('blog-modal-2')"
+                >
+                    <div class="relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <img
+                        src="02blog.jpg"
+                        alt="Lawn Bowling in India – From Royal Heritage to Modern Competitions"
+                            loading="lazy"
+                            class="object-cover h-[300px] md:h-[320px] w-full transform group-hover:scale-105 transition-transform duration-700"
+                            width="1200"
+                            height="800"
+                            decoding="async"
+                        />
+                        <div class="absolute top-4 left-4 bg-indigo-600 text-white text-xs uppercase font-bold px-3 py-1.5 rounded-full z-20">SPORTS</div>
+                    </div>
+                    
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center space-x-2 text-sm text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <time datetime="2022-07-22T00:00:00.000Z">Jul 22, 2022</time>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-200 line-clamp-2">
+                                Lawn Bowling in India – From Royal Heritage to Modern Competitions
+                            </h3>
+                            <p class="text-gray-600 line-clamp-2 leading-relaxed">
+                                Lawn bowling in India is a fascinating blend of colonial heritage and contemporary 
+                                sporting ambition. With deep historical roots and modern developments, the sport is 
+                                steadily carving out its own niche on the Indian sporting landscape.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <button
+                                class="inline-flex items-center text-indigo-600 font-medium group-hover:text-indigo-800 transition-colors"
+                            >
+                                <span>Read more</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">
+                                    <path d="M13.5 7.5L17.5 11.5M17.5 11.5L13.5 15.5M17.5 11.5L2.5 11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Blog Modals -->
+<BlogModal 
+    id="blog-modal-1" 
+    title="Lawn Bowling – A Journey Through History, Tradition, and Geography" 
+    content={blog1Content} 
+/>
+
+<BlogModal 
+    id="blog-modal-2" 
+    title="Lawn Bowling in India – From Royal Heritage to Modern Competitions" 
+    content={blog2Content} 
+/>
