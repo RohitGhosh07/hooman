@@ -6,12 +6,24 @@ const userEmail = Astro.cookies.get("userEmail");
 
 <header class="px-8 sticky top-0 z-50 bg-white border-b">
     <nav class="flex justify-between py-6 max-w-6xl mx-auto items-center">
-        <a href="/" class="font-jaldi text-gray-800 font-extrabold text-2xl">GLB</a>
+        <img
+            src="logoglb.png"
+            alt="Lawn Bowls"
+            class="h-12 w-auto object-contain transition-transform hover:scale-105"
+            loading="lazy"
+            decoding="async"
+        />
         <div class="space-x-8">
             <a href="/" class="hover:text-yellow-400 transition-colors">Home</a>
-            <a href="#about" class="hover:text-yellow-400 transition-colors">About</a>
-            <a href="#solutions" class="hover:text-yellow-400 transition-colors">Solutions</a>
-            <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+            <a href="#about" class="hover:text-yellow-400 transition-colors"
+                >About</a
+            >
+            <a href="#solutions" class="hover:text-yellow-400 transition-colors"
+                >Solutions</a
+            >
+            <a href="#contact" class="hover:text-yellow-400 transition-colors"
+                >Contact</a
+            >
         </div>
     </nav>
 </header>
