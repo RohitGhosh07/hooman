@@ -1,4 +1,4 @@
-<section class="bg-black py-24 text-white mt-20 rounded-3xl relative">
+<section id="solutions" class="bg-black py-24 text-white mt-20 rounded-3xl relative">
     <div class="px-8">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-8 gap-x-28 gap-y-10">
@@ -122,7 +122,7 @@
                     >
                         <div class="flex md:text-3xl text-2xl space-x-5">
                             <p class="text-[#FAE86E]">05</p>
-                            <h4>LED/digital  Scoreboards</h4>
+                            <h4>LED/DIGITAL SCOREBOARDS</h4>
                         </div>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -150,12 +150,57 @@
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-0 rounded-3xl w-[95%] max-w-6xl shadow-2xl overflow-hidden">
             <div class="flex flex-col md:flex-row h-[80vh] md:h-[600px]">
                 <div class="w-full md:w-1/2 h-64 md:h-full relative">
-                    <img
-                        src="/01.gif"
-                        alt="Lawn Bowls App"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <!-- Image slider container -->
+                    <div class="image-slider h-full w-full relative">
+                        <div class="slides-container h-full w-full">
+                            <div class="slide active absolute inset-0 flex items-center justify-center">
+                                <img
+                                    src="/01.gif"
+                                    alt="Lawn Bowls App"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s1.jpg"
+                                    alt="Lawn Bowls App Showcase"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s1a.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s1b.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                        </div>
+                        <!-- Navigation arrows -->
+                        <button class="slider-nav prev absolute left-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="slider-nav next absolute right-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <!-- Dots indicator -->
+                        <div class="slider-dots absolute bottom-4 left-0 right-0 flex justify-center space-x-2 z-10">
+                            <button class="dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
 
                 <div class="w-full md:w-1/2 p-8 md:p-12 relative overflow-y-auto">
@@ -168,7 +213,7 @@
                     <div class="mb-8">
                         <span class="text-[#FAE86E] font-medium text-sm tracking-wider bg-yellow-50 px-3 py-1 rounded-full">01</span>
                         <h3 class="text-3xl font-bold mt-4 text-gray-900">LAWN BOWLS APP</h3>
-                        <p class="text-gray-600 mt-2 font-medium">Revolutionizing the way you score and track your games 🎯</p>
+                        <p class="text-gray-600 mt-2 font-medium">Revolutionizing the way you score and track your games.</p>
                     </div>
 
                     <div class="space-y-6">
@@ -220,17 +265,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-12 flex gap-4">
-                            <button class="px-6 py-3 bg-[#FAE86E] text-black rounded-xl hover:bg-[#f0dd5a] transition-colors font-medium flex items-center gap-2">
-                                Try Demo
-                                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <button class="px-6 py-3 border-2 border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-gray-600">
-                                Learn More
-                            </button>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -243,12 +278,99 @@
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-0 rounded-3xl w-[95%] max-w-6xl shadow-2xl overflow-hidden">
             <div class="flex flex-col md:flex-row h-[80vh] md:h-[600px]">
                 <div class="w-full md:w-1/2 h-64 md:h-full relative">
-                    <img
-                        src="/02.gif"
-                        alt="Tournament & League App"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                     <!-- Image slider container -->
+                     <div class="image-slider h-full w-full relative">
+                        <div class="slides-container h-full w-full">
+                            <div class="slide active absolute inset-0 flex items-center justify-center">
+                                <img
+                                    src="/02.gif"
+                                    alt="Lawn Bowls App"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2.jpg"
+                                    alt="Lawn Bowls App Showcase"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2a.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2b.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2c.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2d.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2e.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2f.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2g.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s2h.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                        </div>
+                        <!-- Navigation arrows -->
+                        <button class="slider-nav prev absolute left-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="slider-nav next absolute right-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <!-- Dots indicator -->
+                        <div class="slider-dots absolute bottom-4 left-0 right-0 flex justify-center space-x-2 z-10">
+                            <button class="dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
 
                 <div class="w-full md:w-1/2 p-8 md:p-12 relative overflow-y-auto">
@@ -261,7 +383,7 @@
                     <div class="mb-8">
                         <span class="text-[#FAE86E] font-medium text-sm tracking-wider bg-yellow-50 px-3 py-1 rounded-full">02</span>
                         <h3 class="text-3xl font-bold mt-4 text-gray-900">TOURNAMENT & LEAGUE APP</h3>
-                        <p class="text-gray-600 mt-2 font-medium">Your all-in-one tournament management solution 🏆</p>
+                        <p class="text-gray-600 mt-2 font-medium">Your all-in-one tournament management solution.</p>
                     </div>
 
                     <div class="space-y-6">
@@ -301,14 +423,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-8 flex gap-4">
-                            <button class="px-6 py-3 bg-[#FAE86E] text-black rounded-xl hover:bg-[#f0dd5a] transition-colors font-medium">
-                                View Features
-                            </button>
-                            <button class="px-6 py-3 border-2 border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-gray-600">
-                                Get Started
-                            </button>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -321,12 +436,71 @@
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-0 rounded-3xl w-[95%] max-w-6xl shadow-2xl overflow-hidden">
             <div class="flex flex-col md:flex-row h-[80vh] md:h-[600px]">
                 <div class="w-full md:w-1/2 h-64 md:h-full relative">
-                    <img
-                        src="/03.gif"
-                        alt="Universal Software"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                     <!-- Image slider container -->
+                     <div class="image-slider h-full w-full relative">
+                        <div class="slides-container h-full w-full">
+                            <div class="slide active absolute inset-0 flex items-center justify-center">
+                                <img
+                                    src="/03.gif"
+                                    alt="Lawn Bowls App"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s3.jpg"
+                                    alt="Lawn Bowls App Showcase"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s3a.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s3b.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s3c.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s3d.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                        </div>
+                        <!-- Navigation arrows -->
+                        <button class="slider-nav prev absolute left-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="slider-nav next absolute right-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <!-- Dots indicator -->
+                        <div class="slider-dots absolute bottom-4 left-0 right-0 flex justify-center space-x-2 z-10">
+                            <button class="dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
 
                 <div class="w-full md:w-1/2 p-8 md:p-12 relative overflow-y-auto">
@@ -339,7 +513,7 @@
                     <div class="mb-8">
                         <span class="text-[#FAE86E] font-medium text-sm tracking-wider bg-yellow-50 px-3 py-1 rounded-full">03</span>
                         <h3 class="text-3xl font-bold mt-4 text-gray-900">UNIVERSAL SOFTWARE</h3>
-                        <p class="text-gray-600 mt-2 font-medium">Global access to professional scoring tools 🌍</p>
+                        <p class="text-gray-600 mt-2 font-medium">Global access to professional scoring tools.</p>
                     </div>
 
                     <div class="space-y-6">
@@ -379,14 +553,14 @@
                             </div>
                         </div>
 
-                        <div class="mt-8 flex gap-4">
+                        <!-- <div class="mt-8 flex gap-4">
                             <button class="px-6 py-3 bg-[#FAE86E] text-black rounded-xl hover:bg-[#f0dd5a] transition-colors font-medium">
                                 Explore Platform
                             </button>
                             <button class="px-6 py-3 border-2 border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-gray-600">
                                 Try Demo
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -399,12 +573,86 @@
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-0 rounded-3xl w-[95%] max-w-6xl shadow-2xl overflow-hidden">
             <div class="flex flex-col md:flex-row h-[80vh] md:h-[600px]">
                 <div class="w-full md:w-1/2 h-64 md:h-full relative">
-                    <img
-                        src="/04.gif"
-                        alt="Data Analytics"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                     <!-- Image slider container -->
+                     <div class="image-slider h-full w-full relative">
+                        <div class="slides-container h-full w-full">
+                            <div class="slide active absolute inset-0 flex items-center justify-center">
+                                <img
+                                    src="/04.gif"
+                                    alt="Lawn Bowls App"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s4.jpg"
+                                    alt="Lawn Bowls App Showcase"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s4a.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s4b.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s4c.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s4d.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s4e.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                          
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s4g.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                        </div>
+                        <!-- Navigation arrows -->
+                        <button class="slider-nav prev absolute left-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="slider-nav next absolute right-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <!-- Dots indicator -->
+                        <div class="slider-dots absolute bottom-4 left-0 right-0 flex justify-center space-x-2 z-10">
+                            <button class="dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
 
                 <div class="w-full md:w-1/2 p-8 md:p-12 relative overflow-y-auto">
@@ -417,7 +665,7 @@
                     <div class="mb-8">
                         <span class="text-[#FAE86E] font-medium text-sm tracking-wider bg-yellow-50 px-3 py-1 rounded-full">04</span>
                         <h3 class="text-3xl font-bold mt-4 text-gray-900">DATA ANALYTICS</h3>
-                        <p class="text-gray-600 mt-2 font-medium">Precision insights for peak performance 📊</p>
+                        <p class="text-gray-600 mt-2 font-medium">Precision insights for peak performance.</p>
                     </div>
 
                     <div class="space-y-6">
@@ -457,14 +705,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-8 flex gap-4">
-                            <button class="px-6 py-3 bg-[#FAE86E] text-black rounded-xl hover:bg-[#f0dd5a] transition-colors font-medium">
-                                See Analytics
-                            </button>
-                            <button class="px-6 py-3 border-2 border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-gray-600">
-                                Free Trial
-                            </button>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -477,12 +718,113 @@
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-0 rounded-3xl w-[95%] max-w-6xl shadow-2xl overflow-hidden">
             <div class="flex flex-col md:flex-row h-[80vh] md:h-[600px]">
                 <div class="w-full md:w-1/2 h-64 md:h-full relative">
-                    <img
-                        src="/05.gif"
-                        alt="LED/digital Scoreboards"
-                        class="w-full h-full object-cover"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                     <!-- Image slider container -->
+                     <div class="image-slider h-full w-full relative">
+                        <div class="slides-container h-full w-full">
+                            <div class="slide active absolute inset-0 flex items-center justify-center">
+                                <img
+                                    src="/05.gif"
+                                    alt="Lawn Bowls App"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5.jpg"
+                                    alt="Lawn Bowls App Showcase"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5a.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5b.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5c.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5d.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <!-- <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5e.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div> -->
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5f.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5g.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5h.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5i.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                            <div class="slide absolute inset-0 opacity-0 flex items-center justify-center">
+                                <img
+                                    src="/s5j.jpg"
+                                    alt="Lawn Bowls App Interface"
+                                    class="w-auto h-auto max-w-full max-h-full object-contain"
+                                />
+                            </div>
+                        </div>
+                        <!-- Navigation arrows -->
+                        <button class="slider-nav prev absolute left-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button class="slider-nav next absolute right-3 top-1/2 -translate-y-1/2 bg-black hover:bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <!-- Dots indicator -->
+                        <div class="slider-dots absolute bottom-4 left-0 right-0 flex justify-center space-x-2 z-10">
+                            <button class="dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                            <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white"></button>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
 
                 <div class="w-full md:w-1/2 p-8 md:p-12 relative overflow-y-auto">
@@ -495,7 +837,7 @@
                     <div class="mb-8">
                         <span class="text-[#FAE86E] font-medium text-sm tracking-wider bg-yellow-50 px-3 py-1 rounded-full">05</span>
                         <h3 class="text-3xl font-bold mt-4 text-gray-900">LED/DIGITAL SCOREBOARDS</h3>
-                        <p class="text-gray-600 mt-2 font-medium">Modern scoring meets traditional aesthetics 📺</p>
+                        <p class="text-gray-600 mt-2 font-medium">Modern scoring meets traditional aesthetics.</p>
                     </div>
 
                     <div class="space-y-6">
@@ -535,14 +877,14 @@
                             </div>
                         </div>
 
-                        <div class="mt-8 flex gap-4">
+                        <!-- <div class="mt-8 flex gap-4">
                             <button class="px-6 py-3 bg-[#FAE86E] text-black rounded-xl hover:bg-[#f0dd5a] transition-colors font-medium">
                                 Live Demo
                             </button>
                             <button class="px-6 py-3 border-2 border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-gray-600">
                                 Setup Guide
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -600,6 +942,54 @@
                     document.body.style.overflow = "";
                 }
             }
+        });
+
+        // Image slider functionality
+        const sliders = document.querySelectorAll(".image-slider");
+        sliders.forEach((slider) => {
+            const slides = slider.querySelectorAll(".slide");
+            const prevButton = slider.querySelector(".slider-nav.prev");
+            const nextButton = slider.querySelector(".slider-nav.next");
+            const dots = slider.querySelectorAll(".dot");
+
+            let currentIndex = 0;
+
+            const showSlide = (index: number) => {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle("active", i === index);
+                    slide.classList.toggle("opacity-0", i !== index);
+                });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle("active", i === index);
+                });
+            };
+
+            const prevSlide = () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex);
+            };
+
+            const nextSlide = () => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            };
+
+            if (prevButton) {
+                prevButton.addEventListener("click", prevSlide);
+            }
+            
+            if (nextButton) {
+                nextButton.addEventListener("click", nextSlide);
+            }
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    currentIndex = index;
+                    showSlide(currentIndex);
+                });
+            });
+
+            showSlide(currentIndex);
         });
     });
 </script>

@@ -192,7 +192,7 @@ const { id, title, content } = Astro.props;
 document.addEventListener('DOMContentLoaded', () => {
   // Ensure the modalData object exists
   if (!window.modalData) window.modalData = {};
-  window.modalData[id] = content;
+  window.modalData[id] = content || ''; // Added fallback for content
   
   const modal = document.getElementById(id);
   if (!modal) return;
